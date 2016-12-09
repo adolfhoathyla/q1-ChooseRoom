@@ -12,7 +12,6 @@ class ViewController: UIViewController {
 
     @IBOutlet var datePicker: UIDatePicker!
     @IBOutlet var room: UILabel!
-    @IBOutlet var age: UILabel!
     
     var room1Limit: Date?
     var room2Limit: Date?
@@ -32,12 +31,6 @@ class ViewController: UIViewController {
     @IBAction func findRoom(_ sender: UIButton) {
         let age = calculateAge(dateOfBirth: datePicker.date)
         chooseRoom(age: age)
-        
-        let ageComponent = NSCalendar.current.dateComponents(Set<Calendar.Component>([.year, .month, .day]), from: age)
-        let ageText = "\(ageComponent.year!) anos, \(ageComponent.month!) meses, \(ageComponent.day!) dias"
-        self.age.text = ageText
-        if self.age.isHidden { self.age.isHidden = false }
-        
     }
     
     private func generateLimits() {

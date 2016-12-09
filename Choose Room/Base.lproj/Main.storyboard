@@ -46,15 +46,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhn-pd-WqI">
-                                <rect key="frame" x="62" y="317" width="247" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="247" id="x7N-9Z-vKl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -62,16 +53,12 @@
                             <constraint firstItem="3Ls-Ss-tic" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LSE-aj-EbH"/>
                             <constraint firstItem="nWp-ZS-ldg" firstAttribute="top" secondItem="giP-3C-3th" secondAttribute="bottom" constant="79" id="RN5-22-eyi"/>
                             <constraint firstItem="giP-3C-3th" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="Tyg-EV-3eh"/>
-                            <constraint firstItem="Bhn-pd-WqI" firstAttribute="top" secondItem="giP-3C-3th" secondAttribute="bottom" constant="37" id="UkX-Ql-pGp"/>
-                            <constraint firstItem="Bhn-pd-WqI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2" id="caJ-jl-cfR"/>
-                            <constraint firstItem="nWp-ZS-ldg" firstAttribute="top" secondItem="Bhn-pd-WqI" secondAttribute="bottom" constant="21" id="kF8-7i-oTi"/>
                             <constraint firstItem="nWp-ZS-ldg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ksf-7V-gmD"/>
                             <constraint firstItem="giP-3C-3th" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pkU-M8-mFN"/>
                             <constraint firstItem="3Ls-Ss-tic" firstAttribute="top" secondItem="nWp-ZS-ldg" secondAttribute="bottom" constant="38" id="tyK-7v-cGK"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="age" destination="Bhn-pd-WqI" id="T1J-cg-M6i"/>
                         <outlet property="datePicker" destination="giP-3C-3th" id="Nu8-9B-t7T"/>
                         <outlet property="room" destination="nWp-ZS-ldg" id="vf5-rg-Gcm"/>
                     </connections>
